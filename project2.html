@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar{
+        
+        position: relative;
+        
+       
+    }
+    .navbar ul{
+        display: flex;
+    }
+    #logo img{
+        height: 50px;
+        width: 50px;
+        margin: 5px 5px;
+        border-radius: 50px;
+    }
+    .navbar ul li{
+       
+        font-size: 1.3rem;
+        list-style: none;
+        
+    }
+    .navbar ul li a{
+        display: flex;
+        margin: -55px 54px;
+        padding: 6px 12px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        background-color: black;
+    }
+    .navbar::before{
+        content: "";
+        position: absolute;
+         opacity: .4;
+        background-color: black;
+        height: 55px;
+        width: 120rem;
+        z-index: -1;
+    }
+    /*SECTION HOME*/
+    #HOME{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 42px 200px;
+        height: 240px;
+
+    }
+    #HOME::before{
+    content: "";
+       position: absolute;
+       opacity: 0.9;
+       height: 300px;
+       
+       padding-top: 41px;
+       width: 100%;
+       background: url('./index1.jpeg') no-repeat center center/cover;
+       z-index: -1;
+         }
+     .primary{
+       font-size: 50px;
+       padding: 12px;
+       color: black;
+       font-family: 'Bree Serif', serif;
+     }
+     #HOME p{
+        font-size: 19px;
+        font-family: 'Bree Serif', serif;
+        text-align: center;
+        color:black;
+
+     }
+     #HOME button{
+        padding: 5px;
+        margin: 5px;
+        background-color: brown;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        border: 2px solid white;
+        cursor: pointer;
+        font-size: 20px;
+     }
+     /*our service*/
+     #services h1{
+       text-align: center;
+        font-size: 40px;
+        margin: 20px 100px;
+        font-family: 'Bree Serif', serif;
+    
+       
+     }
+     .food{
+        border: 2px solid orange;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        height: 220px;
+        width: 442px;
+        float: left;
+        margin: 10PX 30PX;
+        background-color: antiquewhite;
+     }
+     #box1{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    
+
+       
+     }
+     #box2{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        
+       
+     }
+     #box3{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column; 
+               
+     }
+     section img{
+        height: 100px;
+        width: 100px;
+        margin: auto;
+     }
+      /*OUR CLIENTS*/
+      #ourclients{
+        position: relative;
+        top: 1000px;
+      }
+      #our-clients::before{
+        content: "";
+        background: url('./bc.jpeg');
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        opacity: .4;
+        z-index: -1;
+        margin-top: 225px;
+      }
+      #our-clients h1{
+        text-align: center;
+        font-size: 40px;
+        margin: 283px 100px;
+        font-family: 'Bree Serif', serif;
+       
+      }
+      #our-clients img{
+        height: 100px;
+        width: 100px;
+        padding: 20px 70px;
+        
+      }
+
+    
+     
+     
+  
+   
+</style>
+<body>
+    
+   
+    <nav class="navbar">
+        <div id="logo">
+            <img src="index.jpeg" alt="Myonlinemeal.com">
+        </div>
+       <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ORDER ONLINE</a></li>
+        <li><a href="#">CONTACT US</a></li>
+        <li><a href="#">HELP</a></li>
+       </ul> 
+        
+    </nav>
+    <section id="HOME">
+        <h1 class="primary">WELCOME TO SWIGGY</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quis, inventore voluptatum sapiente nulla necessit. </P>
+             
+        <P>perspiciatis architecto odio inventore optio vero sequi laborum molestiae quo, itaque, pos
+        </P> 
+        <button class="btn">ORDER NOW</button>
+    </section>
+
+    <section id="services">
+        <h1>OUR SERVICES</h1>
+        
+        <box class="food" id="box1">
+            <img src="box1.jpeg">
+            
+            <h2>BULK FOOD ORDERNG</h2>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt possimus vel iure totam exercitationem dicta
+             deserunt fugiat voluptatem eveniet quidem illum facere hic aperiam quisquam quo, autem quis itaque odio!
+        </box>
+        <box class="food" id="box2">
+            <img src="box2.jpeg">
+            <h2>HOME DELIVERY</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque deserunt repellat corporis at hic, ab, commodi 
+            nesciunt tempora minus laboriosam, odio ipsa possimus nisi distinctio debitis. Animi dolores consequatur doloremque.
+        </box>
+        <box class="food" id="box3">
+            <img src="BOX4.PNG">
+            <h2>24/7 SERVICES</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex commodi magni amet iste voluptas est cupiditate ap
+             eriam. Dolorem natus, quasi cumque perferendis nihil nemo quaerat deleniti, fugit delectus assumenda mollitia.
+        </box>
+        
+    </section>
+    <section id="our-clients">
+        <h1>OUR CLIENTS</h1>
+        <img src="C1.png">
+        <img src="C2.jpeg">
+        <img src="C3.png">
+        <img src="C4.png">
+        <img src="c5.jpeg">
+        <img src="c6.jpeg">
+    </section>
+</body>
+</html>
